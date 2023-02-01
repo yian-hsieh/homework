@@ -104,14 +104,14 @@ class GradientDescentLinearRegression(LinearRegression):
                 epoch_range.refresh()  # to show immediately the update
 
             y_hat = self._reg(X, w, b)
-            l = self._mseloss(y_hat, y).mean()
+            loss = self._mseloss(y_hat, y).mean()
 
-            l.backward()
+            loss.backward()
             w, b = self._gradient_descent(
                 w, b, lr
             )  # Update parameters using their gradient
 
-            losses.append(l)
+            losses.append(loss)
 
         self.w = w
         self.b = b

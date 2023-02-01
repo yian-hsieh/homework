@@ -1,6 +1,5 @@
 import numpy as np
 import torch
-from tqdm import trange
 
 
 class LinearRegression:
@@ -96,12 +95,7 @@ class GradientDescentLinearRegression(LinearRegression):
 
         losses = []
 
-        epoch_range = trange(epochs, desc="loss: ", leave=True)
-
-        for epoch in epoch_range:
-            if losses:
-                epoch_range.set_description("loss: {:.6f}".format(losses[-1]))
-                epoch_range.refresh()  # to show immediately the update
+        for epoch in range(epochs):
 
             y_hat = self._reg(X, w, b)
             loss = self._mseloss(y_hat, y).mean()

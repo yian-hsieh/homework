@@ -11,6 +11,8 @@ class CONFIG:
 
     optimizer_factory: Callable[
         [nn.Module], torch.optim.Optimizer
-    ] = lambda model: torch.optim.Adamax(model.parameters(), lr=0.003, weight_decay=0.0007)
+    ] = lambda model: torch.optim.Adamax(
+        model.parameters(), lr=0.003, weight_decay=0.0007
+    )
 
     transforms = Compose([ToTensor()])

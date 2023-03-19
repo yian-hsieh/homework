@@ -26,6 +26,6 @@ class Model(torch.nn.Module):
             nn.Dropout(0.1),
             nn.Linear(1000, num_classes),
         )
-        
+
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         return self.network(x)

@@ -78,7 +78,6 @@ class GradientDescentLinearRegression(LinearRegression):
     def fit(
         self, X: np.ndarray, y: np.ndarray, lr: float = 0.01, epochs: int = 1000
     ) -> None:
-
         """
         Fits model to given input and output.
 
@@ -96,7 +95,6 @@ class GradientDescentLinearRegression(LinearRegression):
         losses = []
 
         for epoch in range(epochs):
-
             y_hat = self._reg(X, w, b)
             loss = self._mseloss(y_hat, y).mean()
 

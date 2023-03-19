@@ -5,7 +5,7 @@ class Model(torch.nn.Module):
     """
     A convolutional neural network with 5 convolutional layers.
     """
-    
+
     def __init__(self, num_channels: int, num_classes: int) -> None:
         super().__init__()
         self.network = torch.nn.Sequential(

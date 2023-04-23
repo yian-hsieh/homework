@@ -136,12 +136,12 @@ class Agent:
     ):
         self.action_space = action_space
         self.observation_space = observation_space
-        self.action_size = env.action_space.n
+        self.action_size = action_space.n
         self.action = 0
         self.iterations = 1
 
         state_size = observation_space.shape[0]
-        action_size = env.action_space.n
+        action_size = action_space.n
         seed = 0
 
         self.q_network = QNetwork(state_size, action_size, seed)

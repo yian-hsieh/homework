@@ -1,8 +1,5 @@
 gymnasium[box2d]
-random
-sys
-time
-collections
+random2
 numpy
 pandas
 torch

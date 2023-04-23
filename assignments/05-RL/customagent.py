@@ -1,10 +1,7 @@
 import gymnasium as gym
 import random
-import sys
-from time import time
-from collections import deque, defaultdict, namedtuple
+from collections import deque, namedtuple
 import numpy as np
-import pandas as pd
 import torch
 import torch.nn as nn
 import torch.nn.functional as F

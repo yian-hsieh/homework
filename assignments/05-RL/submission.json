@@ -2,11 +2,11 @@
     "assignment_name": "RL",
     "contributors": [
         {
-            "name": "Change this to your name",
-            "pennkey": "MyPennKey"
+            "name": "Yi-An Hsieh",
+            "pennkey": "yh667"
         }
     ],
     "sources": [
-        "Don't forget to list your sources/attribution here!"
+        "https://www.katnoria.com/nb_dqn_lunar/"
     ]
 }

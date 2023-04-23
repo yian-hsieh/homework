@@ -7,11 +7,11 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 
-BUFFER_SIZE = int(1e5)  # Replay memory size
-BATCH_SIZE = 32  # Number of experiences to sample from memory
+BUFFER_SIZE = int(1e7)  # Replay memory size
+BATCH_SIZE = 128  # Number of experiences to sample from memory
 GAMMA = 0.99  # Discount factor
 TAU = 1e-3  # Soft update parameter for updating fixed q network
-LR = 1e-3  # Q Network learning rate
+LR = 1e-4  # Q Network learning rate
 UPDATE_EVERY = 4  # How often to update Q network
 
 

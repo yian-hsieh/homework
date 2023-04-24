@@ -157,7 +157,7 @@ class Agent:
         """
         state = observation
         rnd = random.random()
-        eps = 0.1 + 1 / np.sqrt(self.iterations)
+        eps = 0.3 + 1 / np.sqrt(self.iterations)
 
         if rnd < eps:
             action = np.random.randint(self.action_size)

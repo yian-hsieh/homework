@@ -12,7 +12,7 @@ BATCH_SIZE = 128  # Number of experiences to sample from memory
 GAMMA = 0.99  # Discount factor
 TAU = 1e-3  # Soft update parameter for updating fixed q network
 LR = 1e-4  # Q Network learning rate
-UPDATE_EVERY = 6  # How often to update Q network
+UPDATE_EVERY = 4  # How often to update Q network
 
 
 class ReplayBuffer:
